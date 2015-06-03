@@ -1,13 +1,13 @@
-package Model;
+package Model.Ship.ShipParts;
 
 /**
  * Created by Anna Gulidova on 31.05.2015 in Space-greenhorn.
  */
-abstract class ShipParts {
+public abstract class ShipPart {
     private int size_x;
     private int size_y;
 
-    public ShipParts(){
+    public ShipPart(){
         Defaults();
     }
 
@@ -31,4 +31,6 @@ abstract class ShipParts {
     public void setSize_y(int size_y) {
         this.size_y = size_y;
     }
+
+    abstract public void onFire();
 }
