@@ -6,6 +6,10 @@ package Model.Ship.ShipParts;
  */
 public class Cockpit extends ShipPart {
 
+    public Cockpit(){
+        super();
+    }
+
     @Override
     public void onFire() {
 

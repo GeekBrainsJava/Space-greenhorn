@@ -6,6 +6,14 @@ package Model.Ship.ShipParts;
 public class Oxygen extends ShipPart {
     private int power;
 
+    public Oxygen(){
+        super();
+        Defaults();
+    }
+
+    private void Defaults(){
+        setPower(0);
+    }
     public int getPower() {
         return power;
     }

@@ -7,6 +7,15 @@ package Model.Ship.ShipParts;
 public class Shield extends ShipPart {
     private int power;
 
+    public Shield(){
+        super(new int[]{2,2});
+        Defaults();
+    }
+
+    private void Defaults(){
+        setPower(0);
+    }
+
     public int getPower() {
         return power;
     }
